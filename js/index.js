@@ -6,7 +6,7 @@ boton.addEventListener("click", function() {
 reproducir(mibuffer);
 });
 contexto = new AudioContext();
-var url = "https://github.com/Juliavra/25-API-Web-Audio/blob/main/audio/01%20Dark%20Ringy%20Short%20Loop.mp3";
+var url = "https://github.com/Juliavra/25-API-Web-Audio/audio/01 Dark Ringy Short Loop.mp3";
 var solicitud = new XMLHttpRequest(); alert("solicitud: "+`${solicitud}`)
 solicitud.responseType = "arraybuffer";
 solicitud.addEventListener("load", function() {
