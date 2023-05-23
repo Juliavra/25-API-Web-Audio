@@ -5,7 +5,7 @@ var boton = document.getElementById("boton");
 boton.addEventListener("click", function() {
 reproducir(mibuffer);
 });
-contexto = new AudioContext();
+//contexto = new AudioContext();
 
 const audioTune = new Audio("https://github.com/Juliavra/25-API-Web-Audio/01 Dark Ringy Short Loop.mp3");
 audioTune.play();
@@ -25,6 +25,7 @@ solicitud.open("GET", url, true);
 solicitud.send();
 }
 function reproducir(mibuffer) {
+    contexto = new AudioContext();
 var nodofuente = contexto.createBufferSource();
 nodofuente.buffer = mibuffer;
 nodofuente.connect(contexto.destination);
