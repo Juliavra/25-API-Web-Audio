@@ -6,7 +6,7 @@ boton.addEventListener("click", function() {
 reproducir(mibuffer);
 });
 contexto = new AudioContext();
-var url = "20 Dubby Augustus Pablo NR Song.mp3";
+var url = "audio/20 Dubby Augustus Pablo NR Song.mp3";
 var solicitud = new XMLHttpRequest(); alert("solicitud: "+`${solicitud}`)
 solicitud.responseType = "arraybuffer";
 solicitud.addEventListener("load", function() {
