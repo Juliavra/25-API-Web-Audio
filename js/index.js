@@ -10,7 +10,8 @@ var url = "20 Dubby Augustus Pablo NR Song.mp3";
 var solicitud = new XMLHttpRequest(); alert("solicitud: "+`${solicitud}`)
 solicitud.responseType = "arraybuffer";
 solicitud.addEventListener("load", function() {
-if (solicitud.status == 200) {
+alert("solicitud.status: "+`${solicitud.status}`)
+    if (solicitud.status == 200) {
 contexto.decodeAudioData(solicitud.response, function(buffer) {
 mibuffer = buffer;
 boton.disabled = false;
